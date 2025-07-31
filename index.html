@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Gill Sans", sans-serif;
+    }
+    #historique-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        font-size: 1.2em;
+        margin: auto;
+
+
+
+        margin-block: 100%;
+    }
+    #historique-centered{
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding-block: 20px;
+    }
+    .historique-intro-title{
+        font-weight: bold;
+        margin: 10px;
+        font-size: 1.3em;
+
+    }
+    #historique-intro{
+        text-align:center;
+    }
+
+    /* premier */
+    #historique-centered .single-content-historique:nth-child(odd){
+        text-align: left;
+        flex-direction: row;
+    }
+    .single-content-historique{
+        width: 100%;
+        text-align: right;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #historique-centered .single-content-historique:nth-child(odd) .date-historique{
+        text-align: right;
+    }
+
+    .date-historique{
+        font-weight: bold;
+        text-wrap: nowrap;
+        width: 50%;
+        text-align: left;
+        margin: 8px;
+    }
+
+    .contenu-historique{
+        width: 50%;
+        margin: 8px;
+        padding: 8px;
+        background-color: #e1cdb4;
+        border-radius: 5px;
+        font-size: 1em;
+        margin-block: 40px;
+
+        transition: all 0.1s linear;
+    }
+
+    .contenu-historique:hover{
+        box-shadow: #2b2929 0px 0px 5px;
+    }
+
+    #centered-line{
+        position: absolute;
+        background-color: #2b2929;
+        border-radius: 5px;
+        width: 3px;
+        height: 110%;
+        top: -5px;
+    }
+
+    .arrows{
+        width: 3px;
+        height: 30px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-9px, 6px) rotateZ(-40deg);
+        background-color: inherit;
+    }
+    .right-arrow{
+        transform: translate(9px,6px) rotateZ(40deg);
+
+    }
+
+    @media (max-width: 1500px) {
+        #historique-container{
+            font-size: 1.1em;
+            width: 80%;
+
+        }
+    }   
+    @media (max-width: 1300px) {
+        #historique-container{
+            font-size: 1em;
+        }
+    }  
+    @media (max-width: 800px) {
+        #historique-container{
+            font-size: 0.9em;
+            width: 90%;
+
+        }
+    }  
+    @media (max-width: 500px) {
+        #historique-container{
+            font-size: 0.7em;
+        }
+    }  
+</style>
+<body>
+    <div id="historique-container">
+        <div class="historique-intro-title">À Propos</div>
+        <div id="historique-intro">Fondée en février 2016 par Gino Desautels et Jean Claude Caissie, EyeNation™  est une organisation innovante dédiée à la transformation sociale par la technologie. Notre mission est de catalyser une révolution en matière de justice sociale en mettant à profit des solutions technologiques avancées pour protéger les populations vulnérables et améliorer les interventions d'urgence. Entrevue avec Jean Claude Caissie sur la chaine YouTube EyeNation™.</div>
+        <div class="historique-intro-title" style="margin: 30px; text-decoration: underline;">Historique de l’organisation</div>
+        
+        <div id="historique-centered">
+            <div id="centered-line">
+                <div class="left-arrow arrows"></div>
+                <div class="right-arrow arrows"></div>
+            </div>
+
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Février 2016 </div>
+                <div class="contenu-historique"> <strong>Me Normand Tamaro</strong>, docteur en droit et spécialiste en propriété intellectuelle, se joint à l'organisation en tant qu'actionnaire afin de protéger juridiquement notre concept technologique novateur. <a href="https://www.youtube.com/watch?v=bag0A6HvVsA" target="_blank" style="display: block;"> Entrevue avec Me Normand Tamaro sur la chaine YouTube EyeNation™.</a></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Avril 2016 </div>
+                <div class="contenu-historique">Grâce à des investissements publics et privés, notamment de la <strong>MRC des Sources</strong> , la <strong>Sociétés d’aide au développement des collectivités (SADC)</strong> et d’ <strong> Investissement Québec</strong>, EyeNation™  développe un Centre de Gestion Vidéo (CGV) interopérable permettant la diffusion en temps réel d’images captées par différents dispositifs sur une plateforme unifiée.</div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Octobre 2017 </div>
+                <div class="contenu-historique">Partenariat avec <a href="https://www.droneaction360.ca/" target="_blank"> Drone Action 360</a> pour permettre la transmission à distance des images captées par des drones à usage commercial et industriel.</div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Juillet 2018 </div>
+                <div class="contenu-historique">Lancement de l’application mobile <strong>EyeTask</strong>, transformant les téléphones mobiles en caméras corporelles de type BodyCam et embarquées de type DashCam, destinées aux services d’urgence et agences de protection.</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        AOS.init({
+            once: true // Animation ne se joue qu'une seule fois
+        });
+    </script>
+</body>
+</html>
