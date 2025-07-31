@@ -18,13 +18,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 80%;
         font-size: 1.2em;
         margin: auto;
 
 
 
-        margin-block: 100%;
+        margin-block: 40%;
     }
     #historique-centered{
         display: flex;
@@ -39,15 +39,16 @@
         font-weight: bold;
         margin: 10px;
         font-size: 1.3em;
+        text-align: center;
 
     }
     #historique-intro{
         text-align:center;
+        margin: 10px;
     }
 
     /* premier */
     #historique-centered .single-content-historique:nth-child(odd){
-        text-align: left;
         flex-direction: row;
     }
     .single-content-historique{
@@ -61,30 +62,40 @@
 
     #historique-centered .single-content-historique:nth-child(odd) .date-historique{
         text-align: right;
+        margin-right: 16px;
     }
+    #historique-centered .single-content-historique:nth-child(odd) .contenu-historique{
+        margin-left: 16px;
+
+    }
+
 
     .date-historique{
         font-weight: bold;
         text-wrap: nowrap;
         width: 50%;
         text-align: left;
-        margin: 8px;
+        position: relative;
+
+
+        margin-left: 16px;
     }
 
     .contenu-historique{
         width: 50%;
-        margin: 8px;
-        padding: 8px;
+
         background-color: #e1cdb4;
         border-radius: 5px;
         font-size: 1em;
         margin-block: 40px;
 
-        transition: all 0.1s linear;
-    }
 
-    .contenu-historique:hover{
-        box-shadow: #2b2929 0px 0px 5px;
+        margin-right: 16px;
+        padding: 8px;
+
+        text-align: center;
+
+        transition: all 0.1s linear;
     }
 
     #centered-line{
@@ -92,7 +103,7 @@
         background-color: #2b2929;
         border-radius: 5px;
         width: 3px;
-        height: 110%;
+        height: 105%;
         top: -5px;
     }
 
@@ -110,11 +121,28 @@
 
     }
 
+    a{
+        color: rgb(116, 80, 34);
+    }
+    a:visited{
+        color: rgb(132, 83, 151);
+    }
+
+    .circle-historique{
+        width: 20px;
+        height: 20px;
+        background-color: #e1cdb4;
+        border: 2px solid #2b2929;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-53%,-50%);
+        left: 50%;
+    }
+
     @media (max-width: 1500px) {
         #historique-container{
             font-size: 1.1em;
-            width: 80%;
-
         }
     }   
     @media (max-width: 1300px) {
@@ -132,6 +160,7 @@
     @media (max-width: 500px) {
         #historique-container{
             font-size: 0.7em;
+            width: 95%;
         }
     }  
 </style>
@@ -150,18 +179,134 @@
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Février 2016 </div>
                 <div class="contenu-historique"> <strong>Me Normand Tamaro</strong>, docteur en droit et spécialiste en propriété intellectuelle, se joint à l'organisation en tant qu'actionnaire afin de protéger juridiquement notre concept technologique novateur. <a href="https://www.youtube.com/watch?v=bag0A6HvVsA" target="_blank" style="display: block;"> Entrevue avec Me Normand Tamaro sur la chaine YouTube EyeNation™.</a></div>
+                <div class="circle-historique"></div>
+                <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Avril 2016 </div>
-                <div class="contenu-historique">Grâce à des investissements publics et privés, notamment de la <strong>MRC des Sources</strong> , la <strong>Sociétés d’aide au développement des collectivités (SADC)</strong> et d’ <strong> Investissement Québec</strong>, EyeNation™  développe un Centre de Gestion Vidéo (CGV) interopérable permettant la diffusion en temps réel d’images captées par différents dispositifs sur une plateforme unifiée.</div>
+                <div class="contenu-historique">Grâce à des investissements publics et privés, notamment de la <strong>MRC des Sources</strong>, la <strong>Sociétés d’aide au développement des collectivités (SADC)</strong> et d’<strong>Investissement Québec</strong>, EyeNation™  développe un Centre de Gestion Vidéo (CGV) interopérable permettant la diffusion en temps réel d’images captées par différents dispositifs sur une plateforme unifiée.</div>
+                <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Octobre 2017 </div>
                 <div class="contenu-historique">Partenariat avec <a href="https://www.droneaction360.ca/" target="_blank"> Drone Action 360</a> pour permettre la transmission à distance des images captées par des drones à usage commercial et industriel.</div>
+                <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Juillet 2018 </div>
                 <div class="contenu-historique">Lancement de l’application mobile <strong>EyeTask</strong>, transformant les téléphones mobiles en caméras corporelles de type BodyCam et embarquées de type DashCam, destinées aux services d’urgence et agences de protection.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Septembre 2018 </div>
+                <div class="contenu-historique">Déploiement de la plateforme Web <strong>EyeStaff</strong> qui permet la gestion de plus de 50 fonctionnalités du Centre de Gestion Vidéo (CGV).</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Avril 2019</div>
+                <div class="contenu-historique">Déploiement d’une plateforme de visualisation des appels vidéo d’urgence, devenant en 2020 une solution multilingue d’envergure internationale sous le nom <a href="https://112.video/" target="_blank">112.VIDEO</a>.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Juillet 2019 </div>
+                <div class="contenu-historique">Lancement d'un logiciel de création de <strong>certificats d’authentification</strong> pour les preuves vidéo, incluant les métadonnées, afin de permettre leur dépôt judiciaire.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Octobre 2019 </div>
+                <div class="contenu-historique">Coopération avec l’Université de Sherbrooke et la réserve de l’Armée canadienne pour superviser une simulation d’urgence via caméras corporelles et drones, améliorant la coordination et l’interopérabilité des services. <a href="https://youtu.be/SZLJDc5jgwQ" target="_blank"> Supervision aérienne de la simulation militaire à l’Université de Sherbrooke sur la chaine YouTube EyeNation™</a>.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Novembre 2019 </div>
+                <div class="contenu-historique">Présentation de nos technologies à la Ministre de la Sécurité publique au Congrès de la sécurité civile. Début de la collaboration avec les services 9-1-1.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Janvier 2020 </div>
+                <div class="contenu-historique">Démarches concertées avec les ministères et les maisons d’hébergement pour femmes violentées afin de lutter contre la violence conjugale par des outils technologiques. </div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Janvier 2020 </div>
+                <div class="contenu-historique">Démarches concertées avec les ministères et les maisons d’hébergement pour femmes violentées afin de lutter contre la violence conjugale par des outils technologiques. </div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Février 2020 </div>
+                <div class="contenu-historique">: Lancement de l’application d’autoprotection dédiée aux personnes à risque tels que victime de violence conjugale, de racisme, d’intimidation, de maltraitance, d’homophobie et plus.  </div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Février 2020 </div>
+                <div class="contenu-historique">Tests techniques concluants avec le MSP et les centrales d’urgence depuis des maisons d’hébergement. Lancement du projet pilote « En temps réel ».</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Février 2020 </div>
+                <div class="contenu-historique">Création de la division civile d’EyeNation™. Protection de notre première cliente victime de violence conjugale. <a href="https://www.youtube.com/watch?v=b_tlUQ1FnqE" target="_blank"> Entrevue avec Me Nathalie Grenier sur la chaine YouTube EyeNation™ </a>.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Mars 2020  </div>
+                <div class="contenu-historique">Partenariat avec <strong>Urgences-Santé</strong> pour l’implantation de nos solutions dans les téléphones de 27 superviseurs sur le terrain.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Avril 2020 </div>
+                <div class="contenu-historique">La pandémie de COVID-19 ralentit les activités et entraîne des mises à pied.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Juillet 2021 </div>
+                <div class="contenu-historique">Le <strong>centre de Recherche et d’Innovation en Sécurité Civile</strong> (RISC) remet une étude sur les enjeux éthiques et les bonnes pratiques associées à la solution 911 VIDEO.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Février 2022 </div>
+                <div class="contenu-historique">Collaboration renouvelée avec Drone Action 360 et EyeNation™  pour des opérations de supervision aérienne pour un important groupe d’Intervention tactique (GTI) au Québec.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Octobre 2022 </div>
+                <div class="contenu-historique">Déploiement de l’<strong>application mobile d’autoprotection Robine</strong>. Début du projet pilote de protection de personne à haut risque de violence avec la <strong>Centrale d’Alarme Bromont</strong>. Lancement du projet pilote avec la Centrale d’alarme de Bromont et mise en place des activités marketing pour le lancement canadien. <a href="https://robine.app/" target="_blank"> Site Web de l’application mobile Robine</a>.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Novembre 2022 </div>
+                <div class="contenu-historique">Reprise des activités grâce à une nouvelle ronde de financement et restructuration organisationnelle. Mise sur pied d’une nouvelle équipe de développement à Montréal.</div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Novembre 2023 </div>
+                <div class="contenu-historique">EyeNation™  est reconnu comme fournisseur officiel de l’<a href="https://www.ivac.qc.ca/Pages/default.aspx" target="_blank">IVAC (Indemnisation des Victimes d’Actes Criminels).</a></div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Décembre 2024 </div>
+                <div class="contenu-historique">L’application Robine protège plus de 100 personnes victimes de violence au Québec. </div>
+                <div class="circle-historique"></div>
+            </div>
+            <div data-aos="fade-up" class="single-content-historique">
+                <div class="date-historique">Octobre 2025 </div>
+                <div class="contenu-historique">Nos preuves certifiées authentiques ont été admises en preuve dans des dossiers 
+à la Cour supérieure et la Cour du Québec. Nos preuves certifiées déposé au tribunal (DPCP/DPJ) ont permis :
+<br>
+a) Accusé grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
+<br>
+b) Emprisonné grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
+<br>
+c) Système BAR installé grâce au preuves vidéo certifiées authentiques déposées au DPCP 
+<br>
+d) Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPCP 
+<br>
+e) Retrait des plaintes croisées grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
+<br>
+f) Ordonnance de traitement psychiatrique grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
+<br>
+g) Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPJ 
+</div>
+                <div class="circle-historique"></div>
             </div>
         </div>
     </div>
