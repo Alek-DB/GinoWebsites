@@ -6,24 +6,30 @@
     <title>Document</title>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <style>
     *{
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        font-family: "Gill Sans", sans-serif;
+        font-family: 'Open Sans';
+    }
+    #top-info-historique{
+        background-color: #e9e9e9;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
     }
     #historique-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
-        font-size: 1.2em;
-        margin: auto;
-
-
-
+        width: 100%;
+        font-size: 1.1em;
         margin-block: 40%;
     }
     #historique-centered{
@@ -38,13 +44,14 @@
     .historique-intro-title{
         font-weight: bold;
         margin: 10px;
-        font-size: 1.3em;
+        font-size: 2em;
         text-align: center;
 
     }
     #historique-intro{
         text-align:center;
         margin: 10px;
+        max-width: 1300px;
     }
 
     /* premier */
@@ -62,35 +69,30 @@
 
     #historique-centered .single-content-historique:nth-child(odd) .date-historique{
         text-align: right;
-        margin-right: 16px;
     }
     #historique-centered .single-content-historique:nth-child(odd) .contenu-historique{
-        margin-left: 16px;
+        margin-left: 4px;
 
     }
 
 
     .date-historique{
-        font-weight: bold;
         text-wrap: nowrap;
         width: 50%;
         text-align: left;
         position: relative;
+        color: #a7a7a7;
+        font-size: 1.5em;
+        font-weight: bolder;
 
-
-        margin-left: 16px;
+        padding: 20px;
     }
 
     .contenu-historique{
         width: 50%;
-
-        background-color: #e1cdb4;
-        border-radius: 5px;
+        background-color: #e9e9e9 ;
         font-size: 1em;
-        margin-block: 40px;
-
-
-        margin-right: 16px;
+        margin-block: 15px;
         padding: 8px;
 
         text-align: center;
@@ -100,43 +102,46 @@
 
     #centered-line{
         position: absolute;
-        background-color: #2b2929;
+        background-color: #a7a7a7;
         border-radius: 5px;
-        width: 3px;
-        height: 105%;
-        top: -5px;
+        width: 2px;
+        height: 102%;
+        top: 0px;
+        left: 50%;
     }
 
     .arrows{
-        width: 3px;
-        height: 30px;
+        width: 2px;
+        height: 20px;
         border-radius: 5px;
         position: absolute;
         bottom: 0;
-        transform: translate(-9px, 6px) rotateZ(-40deg);
+        transform: translate(-6px, 4px) rotateZ(-40deg);
         background-color: inherit;
     }
     .right-arrow{
-        transform: translate(9px,6px) rotateZ(40deg);
+        transform: translate(6px,4px) rotateZ(40deg);
 
     }
 
     a{
-        color: rgb(116, 80, 34);
+        color: rgb(36, 51, 116);
+        font-weight: bold;
     }
     a:visited{
-        color: rgb(132, 83, 151);
+        color: rgb(90, 25, 116);
     }
 
     .circle-historique{
+        z-index: 3;
         width: 20px;
         height: 20px;
-        background-color: #e1cdb4;
-        border: 2px solid #2b2929;
+        background-color: white;
+        border: 2px solid #a7a7a7;
         border-radius: 50%;
         position: absolute;
         top: 50%;
-        transform: translate(-53%,-50%);
+        transform: translate(-43%,-50%);
         left: 50%;
     }
 
@@ -153,22 +158,22 @@
     @media (max-width: 800px) {
         #historique-container{
             font-size: 0.9em;
-            width: 90%;
 
         }
     }  
     @media (max-width: 500px) {
         #historique-container{
             font-size: 0.7em;
-            width: 95%;
         }
     }  
 </style>
 <body>
     <div id="historique-container">
-        <div class="historique-intro-title">À Propos</div>
-        <div id="historique-intro">Fondée en février 2016 par Gino Desautels et Jean Claude Caissie, EyeNation™  est une organisation innovante dédiée à la transformation sociale par la technologie. Notre mission est de catalyser une révolution en matière de justice sociale en mettant à profit des solutions technologiques avancées pour protéger les populations vulnérables et améliorer les interventions d'urgence. Entrevue avec Jean Claude Caissie sur la chaine YouTube EyeNation™.</div>
-        <div class="historique-intro-title" style="margin: 30px; text-decoration: underline;">Historique de l’organisation</div>
+        <div id="top-info-historique">
+            <div class="historique-intro-title">À Propos</div>
+            <div id="historique-intro">Fondée en février 2016 par Gino Desautels et Jean Claude Caissie, EyeNation™  est une organisation innovante dédiée à la transformation sociale par la technologie. Notre mission est de catalyser une révolution en matière de justice sociale en mettant à profit des solutions technologiques avancées pour protéger les populations vulnérables et améliorer les interventions d'urgence. <a href="https://www.youtube.com/watch?v=PWB2Qnig074" target="_blank" style="display: block;">Entrevue avec Jean Claude Caissie sur la chaine YouTube EyeNation™.</a></div>
+        </div>
+        <div class="historique-intro-title" style="margin: 30px; color: #a7a7a7;">Historique de l’organisation</div>
         
         <div id="historique-centered">
             <div id="centered-line">
@@ -244,7 +249,7 @@
             </div>
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Février 2020 </div>
-                <div class="contenu-historique">Création de la division civile d’EyeNation™. Protection de notre première cliente victime de violence conjugale. <a href="https://www.youtube.com/watch?v=b_tlUQ1FnqE" target="_blank"> Entrevue avec Me Nathalie Grenier sur la chaine YouTube EyeNation™ </a>.</div>
+                <div class="contenu-historique">Création de la division civile d’EyeNation™. Protection de notre première cliente victime de violence conjugale. <a href="https://www.youtube.com/watch?v=b_tlUQ1FnqE" target="_blank" style="display: block;"> Entrevue avec Me Nathalie Grenier sur la chaine YouTube EyeNation™.</a></div>
                 <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
@@ -269,7 +274,7 @@
             </div>
             <div data-aos="fade-up" class="single-content-historique">
                 <div class="date-historique">Octobre 2022 </div>
-                <div class="contenu-historique">Déploiement de l’<strong>application mobile d’autoprotection Robine</strong>. Début du projet pilote de protection de personne à haut risque de violence avec la <strong>Centrale d’Alarme Bromont</strong>. Lancement du projet pilote avec la Centrale d’alarme de Bromont et mise en place des activités marketing pour le lancement canadien. <a href="https://robine.app/" target="_blank"> Site Web de l’application mobile Robine</a>.</div>
+                <div class="contenu-historique">Déploiement de l’<strong>application mobile d’autoprotection Robine</strong>. Début du projet pilote de protection de personne à haut risque de violence avec la <strong>Centrale d’Alarme Bromont</strong>. Lancement du projet pilote avec la Centrale d’alarme de Bromont et mise en place des activités marketing pour le lancement canadien. <a href="https://robine.app/" target="_blank" style="display: block;"> Site Web de l’application mobile Robine.</a></div>
                 <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
@@ -288,24 +293,19 @@
                 <div class="circle-historique"></div>
             </div>
             <div data-aos="fade-up" class="single-content-historique">
-                <div class="date-historique">Octobre 2025 </div>
+                <div class="date-historique">Mars 2025 </div>
                 <div class="contenu-historique">Nos preuves certifiées authentiques ont été admises en preuve dans des dossiers 
-à la Cour supérieure et la Cour du Québec. Nos preuves certifiées déposé au tribunal (DPCP/DPJ) ont permis :
-<br>
-a) Accusé grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
-<br>
-b) Emprisonné grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
-<br>
-c) Système BAR installé grâce au preuves vidéo certifiées authentiques déposées au DPCP 
-<br>
-d) Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPCP 
-<br>
-e) Retrait des plaintes croisées grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
-<br>
-f) Ordonnance de traitement psychiatrique grâce aux preuves vidéo certifiées authentiques déposées au DPCP 
-<br>
-g) Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPJ 
-</div>
+                    à la Cour supérieure et la Cour du Québec. Nos preuves certifiées déposé au tribunal (DPCP/DPJ) ont permis :
+                    <ul style="text-align: left; list-style-position: outside; padding-left: 1.5em;">
+                    <li>Accusé grâce aux preuves vidéo certifiées authentiques déposées au DPCP</li>
+                    <li>Emprisonné grâce aux preuves vidéo certifiées authentiques déposées au DPCP</li>
+                    <li>Système BAR installé grâce aux preuves vidéo certifiées authentiques déposées au DPCP</li>
+                    <li>Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPCP</li>
+                    <li>Retrait des plaintes croisées grâce aux preuves vidéo certifiées authentiques déposées au DPCP</li>
+                    <li>Ordonnance de traitement psychiatrique grâce aux preuves vidéo certifiées authentiques déposées au DPCP</li>
+                    <li>Amélioration du dossier grâce aux preuves vidéo certifiées authentiques déposées à la DPJ</li>
+                    </ul>
+                </div>
                 <div class="circle-historique"></div>
             </div>
         </div>
